@@ -1,8 +1,13 @@
 <?php
 
+# go to https://api.openweathermap.org 
+# get an api key
+# here i made use of the free plan
+# APPID should be the api key
+
 if (isset($_GET["city"]) && (!empty($_GET["city"]))) {
    # code...
-   $apiData =  file_get_contents("https://api.openweathermap.org/data/2.5/weather?q=".$_GET['city']."&APPID=19fd70b18eca99d4396ea521c3ba18f9");
+   $apiData =  file_get_contents("https://api.openweathermap.org/data/2.5/weather?q=".$_GET['city']."&APPID= ## Api key here ## ");
 
    $weatherArray = json_decode($apiData, true); //convert the JSON object to php
 

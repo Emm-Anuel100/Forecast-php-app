@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   list-style: none;
+   border: none;
+   text-decoration: none;
+   outline: none;
+}
+body{
+   min-height: 100vh;
+   width: 100%;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   background-color: rgba(18, 18, 19, 0.986);
+}
+header h2 a{
+   color: #eee;
+   position: relative;
+   left: 7%;
+   top: 13px;
+   transform: translate(50%,12%);
+   font-weight: 100;
+}
+.wrapper h4{
+   position: absolute;
+   text-transform: uppercase;
+   font-size: 23px;
+   font-family:'Courier New', Courier, monospace;
+   color: #eee;
+}
+h4 span{
+   color: orange;
+}
+section.wrapper{
+   width: 100%;
+   padding-left: 35%;
+}
+section.con{
+   position: relative;
+   top: 10vh;
+   max-width: 22rem;
+}
+input[type="search"]{
+   position: relative;
+   top: 3rem;
+   padding: 15px 2%;
+   width: 22rem;
+   border-radius: .2rem;
+   font-size: 17px;
+}
+::placeholder{
+   font-size: 14px;
+}
+div.output{
+   max-width: 22rem;
+   margin: 2rem 0;
+   height: auto;
+   border: solid 1px #eeeeee60;
+   background: #2926266b;
+   padding: 14px 15px;
+   backdrop-filter: blur(6px);
+}
+/* weather gif img */
+img{
+   width: 40px;
+}
+span.img{
+   display: flex;
+   width: 5.7rem;
+   justify-content: space-between;
+}
+p.details{
+   color: #eee;
+   margin-top: 7px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+}
+p.climate{
+   color: orange;
+   font-size: 15px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 700;
+   margin-top: 10px;
+}
+
+
+
+
+
+
+@media all and (max-width: 800px) {
+   section.wrapper{
+      width: 100%;
+      padding-left: 27%;
+   }
+}
+@media all and (max-width: 600px) {
+   section.wrapper{
+      width: 100%;
+      padding-left: 7%;
+   }
+}
+@media all and (max-width: 400px) {
+   section.wrapper{
+      width: 100%;
+      padding-left: 3.5%;
+   }
+   input[type="search"]{
+      width: 98% !important;
+   }
+   div.output{
+      width: 96% !important;
+   }
+}
